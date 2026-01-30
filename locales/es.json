@@ -1,0 +1,9 @@
+{
+  "hello": "hola mundo",
+  "metadata": {
+    "layout": {
+      "title": "Portfolio 2026",
+      "description": "descripccion en espanol"
+    }
+  }
+}

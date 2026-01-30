@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js 16 + Tailwind CSS 4 + Typescript Ultimate Starter
 
-## Getting Started
+This is a professional, pre-configured template designed to save you hours of initial setup. It includes everything you need for modern, scalable applications with global support right out of the box.
 
-First, run the development server:
+## Why use this template?
+
+Configuring language handling and dark mode in Next.js is often repetitive and error-prone. This template does it for you:
+
+* **Next.js 16 (App Router):** Cutting-edge performance and React Server Components.
+* **Tailwind CSS 4:** The evolution of design with simplified configuration and increased speed.
+* **Multi-language (i18n):** Robust internationalization system already integrated into routes and components.
+* **Dark/Light Mode:** Seamless implementation, without flashing, and with persistence in LocalStorage.
+* **Clean Structure:** Optimized folder organization for scaling projects.
+
+---
+
+## Instalación y Uso
+
+### 1. Clonar el repositorio
+
+```bash
+git clone 
+cd nombre-de-tu-repo
+```
+
+### 2. Install Dependencies
+
+```bash
+npm i
+```
+
+### 3. Run in development mode
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Compile the project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## And you can try it with:
 
-## Learn More
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Suggestions are welcome! If you find a bug or have an improvement for the Next 16 configuration, feel free to open an issue or submit a pull request
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed with ❤️ by Alex Rosales

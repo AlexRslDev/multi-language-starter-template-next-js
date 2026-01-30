@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #09090b;
+  }
+
+  .dark {
+    --background: #09090b;
+    --foreground: #fafafa;
+  }
+}
+
+@theme {
+  --color-window: #aaf200;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  font-family: var(--font-geist-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
