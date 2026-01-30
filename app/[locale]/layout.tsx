@@ -18,6 +18,12 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+export const dynamic = 'force-static';
+
+export function generateStaticParams() {
+  return [{ locale: 'en' }, { locale: 'es' }];
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
@@ -43,12 +49,12 @@ export default async function RootLayout({ children, params }: Props) {
     notFound();
   }
 
-  const messages = await getMessages();
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${geistSans.variable} antialiased`}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <Providers>
             {children}
           </Providers>
